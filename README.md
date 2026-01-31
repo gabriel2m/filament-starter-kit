@@ -12,9 +12,9 @@
 
 ```sh
 docker run --rm --interactive --tty \
-  --volume $PWD:/app \  
+  --volume $PWD:/app \
   --user $(id -u):$(id -g) \
-  composer create-project gabriel2m/filament-starter-kit {project_name}
+  composer create-project --ignore-platform-reqs gabriel2m/filament-starter-kit {project_name}
 cd {project_name}
 ./vendor/bin/sail up -d
 ./vendor/bin/sail composer setup
