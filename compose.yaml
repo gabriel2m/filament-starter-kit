@@ -9,7 +9,7 @@ services:
         environment:
             WWWUSER: '${WWWUSER}'
             LARAVEL_SAIL: 1
-            XDEBUG_MODE: '${XDEBUG_MODE}'
+            XDEBUG_MODE: '${XDEBUG_MODE:-off}'
             IGNITION_LOCAL_SITES_PATH: '${PWD}'
         volumes:
             - '.:/var/www/html'
