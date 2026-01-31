@@ -3,7 +3,7 @@
     "name": "gabriel2m/filament-starter-kit",
     "type": "project",
     "description": "Skeleton application for Filament.",
-    "keywords": ["laravel", "filament"],
+    "keywords": ["filament", "filamentphp"],
     "license": "MIT",
     "require": {
         "php": "^8.4",
