@@ -39,7 +39,8 @@
             "@php artisan key:generate --ansi",
             "@php artisan migrate --graceful --ansi",
             "npm install",
-            "supervisorctl start vite"
+            "supervisorctl start vite",
+            "@php artisan make:filament-user"
         ],
         "dev": [
             "Composer\\Config::disableProcessTimeout",
