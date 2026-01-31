@@ -11,13 +11,13 @@
 ## Setup
 
 ```sh
-    docker run --rm --interactive --tty \
-        --volume $PWD:/app \  
-        --user $(id -u):$(id -g) \
-        composer create-project gabriel2m/filament-starter-kit {project_name}
-    cd {project_name}
-    ./vendor/bin/sail up -d
-    ./vendor/bin/sail composer setup
+docker run --rm --interactive --tty \
+  --volume $PWD:/app \  
+  --user $(id -u):$(id -g) \
+  composer create-project gabriel2m/filament-starter-kit {project_name}
+cd {project_name}
+./vendor/bin/sail up -d
+./vendor/bin/sail composer setup
 ```
 
 ## License
